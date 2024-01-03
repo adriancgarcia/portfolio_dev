@@ -1,115 +1,142 @@
-<!DOCTYPE html>
-<html lang="eng">
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <head>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Adrian C. Garcia Dev Portfolio</title>
-        <link rel="stylesheet" href="styles2.css">
-        <script src="portfolio2.js"></script>
-    </head>
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/styles2.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>Vertical Fixed Navigation</title>
+</head>
 
     <body>
-        <div id="intro">
-            <header class="description">
-                <h1 class="me">Adrian C. Garcia</h1>
-                <p>Full Stack Software Developer</p>
-                <img src="assets/acg_headshot.jpg">
-            </header>
-        </div>
-        
-        <nav>
-            <ul class="navbar">
-                <li><a href="#intro"><span class="nav-horizontal"></span>Home</a></li>
-                <li><a href="#slide01"><span class="nav-horizontal"></span>About</a></li>
-                <li><a href="#slide02"><span class="nav-horizontal"></span>Skills</a></li>
-                <li><a href="#slide03"><span class="nav-horizontal"></span>Projects</a></li>
-                <li><a href="#slide04"><span class="nav-horizontal"></span>Contact</a></li>
-                <li><a href="#slide05"><span class="nav-horizontal"></span>Resume</a></li>
+        <nav id="cd-vertical-nav">
+            <ul>
+                <li>
+                    <a href="#section1" data-number="1">
+                        <h1>Adrian Cortez Garcia Photography</h1>
+                        <span class="cd-dot"></span>
+                        <span class="cd-label">Intro</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#section2" data-number="2">
+                        <span class="cd-dot"></span>
+                        <span class="cd-label">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#section3" data-number="3">
+                        <span class="cd-dot"></span>
+                        <span class="cd-label">Features</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#section4" data-number="4">
+                        <span class="cd-dot"></span>
+                        <span class="cd-label">Portfolio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#section5" data-number="5">
+                        <span class="cd-dot"></span>
+                        <span class="cd-label">Pricing</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#section6" data-number="6">
+                        <span class="cd-dot"></span>
+                        <span class="cd-label">Contact</span>
+                    </a>
+                </li>
             </ul>
         </nav>
+        <a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
+        
+        <!-- <top-nav> -->
+            <!-- <ul class="navbar">
+                <li><a href="#section1"><span class="nav-horizontal"></span>Home</a></li>
+                <li><a href="#section2"><span class="nav-horizontal"></span>About</a></li>
+                <li><a href="#section3"><span class="nav-horizontal"></span>Skills</a></li>
+                <li><a href="#section4"><span class="nav-horizontal"></span>Projects</a></li>
+                <li><a href="#section5"><span class="nav-horizontal"></span>Contact</a></li>
+                <li><a href="#section6"><span class="nav-horizontal"></span>Resume</a></li>
+            </ul> -->
+        <!-- </nav> -->
 
-        <div id="nav-dots">
-            <ul>
-                <li><a href="#intro"><span class="nav-dot"></span><span class="nav-label">Home</span></a></li>
-                <li><a href="#slide01"><span class="nav-dot"></span><span class="nav-label">About</span></a></li>
-                <li><a href="#slide02"><span class="nav-dot"></span><span class="nav-label">Skills</span></a></li>
-                <li><a href="#slide03"><span class="nav-dot"></span><span class="nav-label">Projects</span></a></li>
-                <li><a href="#slide04"><span class="nav-dot"></span><span class="nav-label">Contact</span></a></li>
-                <li><a href="#slide05"><span class="nav-dot"></span><span class="nav-label">Resume</span></a></li>
-            </ul>
-        </div>
 
-        <!-- <div id="sidenav">
-            <ul>
-                <li><a href="#intro"><span class="nav-dot"></span><span class="nav-label"><span class="nav-horizontal"></span></span></a></li>
-                <li><a href="#slide01"><span class="nav-dot"></span><span class="nav-label">About</span></a></li>
-                <li><a href="#slide02"><span class="nav-dot"></span><span class="nav-label">Skills</span></a></li>
-                <li><a href="#slide03"><span class="nav-dot"></span><span class="nav-label">Projects</span></a></li>
-                <li><a href="#slide04"><span class="nav-dot"></span><span class="nav-label">Contact</span></a></li>
-                <li><a href="#slide05"><span class="nav-dot"></span><span class="nav-label">Resume</span></a></li>
-            </ul>
-        </div> -->
+        <section id="section1" class="cd-section">
+            <h1 class="me">Adrian C. Garcia</h1>
+            <p>Full Stack Software Developer</p>
+            <img src="assets/acg_headshot.jpg" alt="adrian headshot">
+            <a href="#section2" class="cd-scroll-down cd-img-replace">Scroll down</a>
+        </section> <!-- cd-section -->
 
-        <div id="main" class="main-content">
-            <article id="slide01" class="slide fs">
-                <div class="wrapper">
-                    <header class="slideInUp">
-                        <h1>About</h1>
-                    </header>
-                    <section>
-                        <p class="slideInUp slideInUp2">I am a software engineer with a background in visual arts. In my previous role, connecting with people was paramount to my success. Creating a unique and memorable customer experience sets me apart in this competitive market. Being detail-oriented, forward thinking, and an excellent communicator compliment my skills as a web developer when collaborating with others to conceptualize and produce projects.</p>
-                    </section>
-                </div> <!-- .wrapper -->
-            </article>
+        <section id="section2" class="cd-section">
+            <h1>About</h1>
+                <p>I am a software engineer with a background in visual arts. In my previous role, connecting with people was paramount to my success. Creating a unique and memorable customer experience sets me apart in this competitive market. Being detail-oriented, forward thinking, and an excellent communicator compliment my skills as a web developer when collaborating with others to conceptualize and produce projects.</p>
+            <a href="section3" class="cd-scroll-down cd-img-replace">Scroll down</a>
+        </section> <!-- cd-section -->
 
-            <article id="slide02" class="slide fs">
-                <div class="wrapper">
-                    <header class="slideInUp">
-                        <h1>Skills</h1>
-                    </header>
-                    <section class="icons">
-                        <h2 class="slideInUp slideInUp2">Languages and Frameworks</h2>
-                        <img src ="assets/web_icons/small/html5_logo.png">
-                        <img src ="assets/web_icons/small/css3_logo.png">
-                        <img src ="assets/web_icons/small/javascript_logo.png">
-                        <img src ="assets/web_icons/small/django_logo.png">
-                        <img src ="assets/web_icons/small/flask.png">
-                        <img src ="assets/web_icons/small/Svelte_Logo.png">
-                        <img src ="assets/web_icons/small/nodejs_logo.png">
-                        <img src ="assets/web_icons/small/python_logo.png">
-                        <img src ="assets/web_icons/small/react_logo.png">
-                    </section>
-                </div> <!-- .wrapper -->
-            </article>
+        <section id="section3" class="cd-section">
+            <h1>Skills</h1>
+                <section class="icons">
+                    <h2>Languages and Frameworks</h2>
+                    <img src ="assets/web_icons/small/html5_logo.png">
+                    <img src ="assets/web_icons/small/css3_logo.png">
+                    <img src ="assets/web_icons/small/javascript_logo.png">
+                    <img src ="assets/web_icons/small/django_logo.png">
+                    <img src ="assets/web_icons/small/flask.png">
+                    <img src ="assets/web_icons/small/Svelte_Logo.png">
+                    <img src ="assets/web_icons/small/nodejs_logo.png">
+                    <img src ="assets/web_icons/small/python_logo.png">
+                    <img src ="assets/web_icons/small/react_logo.png">
+                </section>
+        </section><!-- cd-section -->
 
-            <article id="slide03" class="slide fs">
-                <div class="wrapper">
-                    <header class="slideInUp">
-                        <h1>Projects</h1>
-                    </header>
-                    <section>
-                        <h2 class="slideInUp slideInUp2">Mileage Reimbursement Tracker</h2>
-                        <img src ="assets/projects/mileage_tracker.png">
-                        
-                        <h2 class="slideInUp slideInUp2">Personal Jukebox</h2>
-                        <img src ="assets/projects/personal_jukebox.png">
-                        
-                        <h2 class="slideInUp slideInUp2">Job Application Tracker</h2>
-                        <img src ="assets/projects/jop_application_tracker.png">
-                        
-                        <h2 class="slideInUp slideInUp2">Wedding Venue Tracker</h2>
-                        <img src ="assets/projects/wedding_venue_tracker.png">
-                        
-                        <h2 class="slideInUp slideInUp2">Star Wars App</h2>
-                        <img src ="assets/projects/starwars_app.png">
-                        
-                    </section>
-                </div> <!-- .wrapper -->
-            </article>
+        <section id="section4" class="cd-section">
+            <h1>Projects</h1>
+                <section class="projects-list">
+                    <h2>Mileage Reimbursement Tracker</h2>
+                    <img src ="assets/projects/mileage_tracker.png">
 
-        </div>
+                    <hr class="solid-line">
+                    
+                    <h2 class="slideInUp slideInUp2">Personal Jukebox</h2>
+                    <img src ="assets/projects/personal_jukebox.png">
+
+                    <hr class="solid-line">
+                    
+                    <h2 class="slideInUp slideInUp2">Job Application Tracker</h2>
+                    <img src ="assets/projects/jop_application_tracker.png">
+
+                    <hr class="solid-line">
+
+                    <h2 class="slideInUp slideInUp2">Wedding Venue Tracker</h2>
+                    <img src ="assets/projects/wedding_venue_tracker.png">
+                    
+                    <hr class="solid-line">
+
+                    <h2 class="slideInUp slideInUp2">Star Wars App</h2>
+                    <img src ="assets/projects/starwars_app.png">
+                    
+                </section>
+        </section> <!-- cd-section -->
+
+        <section id="section5" class="cd-section">
+            <h1>Contact</h1>
+            <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
+        </section><!-- cd-section -->
+        
+        <section id="section6" class="cd-section">
+            <h1>Downloiad Resume</h1>
+            <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
+        </section><!-- cd-section -->
+
 
         <div class="footer">
             <h3>© 2023 Adrian C. Garcia</h3>
@@ -119,8 +146,8 @@
 
 
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/jquery-2.1.1.js"></script>
+        <script src="js/portfolio2.js"></script> <!-- Resource jQuery -->
 
     </body>
 
