@@ -153,7 +153,7 @@ Main components
   clear: both;
 }
 .no-touch #cd-vertical-nav a span {
-  float: right;
+  /* float: right; */
   display: inline-block;
   -webkit-transform: scale(0.6);
   -moz-transform: scale(0.6);
@@ -342,7 +342,7 @@ Main components
 
 
 
-/* #section1 img {
+#section1 img {
   height: 400px;
   width: 300px;
 }
@@ -398,7 +398,7 @@ hr.solid-line {
 
 .footer h3{
   color: #ffffff;
-} */
+}
 
 /* Horizontal Top Navigation */
 /* ul.navbar {
